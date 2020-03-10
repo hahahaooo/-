@@ -1,0 +1,56 @@
+.collect_main {
+  padding-top: 15rpx;
+  border-top: 1rpx solid #ccc;
+  background-color: #f3f4f6;
+}
+.collect_main .collect_title {
+  padding: 40rpx 0;
+}
+.collect_main .collect_title .collect_tips {
+  padding: 15rpx;
+  border: 1rpx solid #ccc;
+  margin-left: 25rpx;
+  background-color: #fff;
+}
+.collect_main .collect_title .active {
+  color: var(--themeColor);
+  border-color: currentColor;
+}
+.collect_content .collect_item {
+  padding: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.collect_content .collect_item navigator {
+  display: flex;
+  width: 100%;
+}
+.collect_content .collect_item navigator image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  width: 80%;
+}
+.collect_content .collect_item navigator .goods_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 4;
+  padding: 0 15rpx;
+}
+.collect_content .collect_item navigator .goods_info .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect_content .collect_item navigator .goods_info text {
+  color: var(--themeColor);
+}
+.collect_content .noGoods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 300rpx;
+  color: #ccc;
+}

@@ -1,0 +1,40 @@
+
+.goods_item {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.goods_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goods_img_wrap image {
+  width: 70%;
+}
+
+.right_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* 文字第二行超出以省略号代替 */
+
+.right_info_wrap .goods_name {
+  overflow: hidden; /* 超出的文本隐藏*/
+  text-overflow: ellipsis; /* 溢出用省略号显示*/
+  word-break:break-all; /* 断点*/
+  display: -webkit-box; /* 将对象作为弹性伸缩盒子模型显示。*/
+  -webkit-box-orient: vertical; /* 从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）*/
+  -webkit-line-clamp: 2; /* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。*/
+}
+
+.right_info_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+

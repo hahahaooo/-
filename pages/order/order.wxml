@@ -1,0 +1,3 @@
+  <tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    内容,获取不到订单 没有
+  </tabs>

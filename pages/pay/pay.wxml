@@ -1,0 +1,47 @@
+<!-- 收货地址容器 -->
+<view class="revice_address_row">
+    <!-- 当收获地址存在 详细信息显示 -->
+    <view class="address">
+        <view class="user_info">
+            <view>{{address.userName}}</view>
+            <view>{{address.all}}</view>
+        </view>
+        <view class="user_phone">{{address.telNumber}}</view>
+    </view>
+</view>
+<!-- 购物车商品信息 -->
+<view class="cart_content">
+    <!-- 购物车 -->
+    <view class="cart_title">购物车</view>
+    <!-- 判断购物车是否为空,空的话显示提示购物车空的-->
+    <block>
+        <view class="cart_item" wx:for="{{checkedCart}}" wx:key="goods_id">
+            <view class="cart_main">
+                <!-- 商品图片 -->
+                <navigator class="cart_img_wrap">
+                    <image mode="widthFix" src="{{item.goods_small_logo}}" mode="widthFix"></image>
+                </navigator>
+                <!-- 商品信息 -->
+                <view class="cart_info_wrap">
+                    <view class="goods_name">{{item.goods_name}}</view>
+                    <view class="goods_price_wrap">
+                        <view class="goods_price">￥{{item.goods_price}}</view>
+                        <view class="cart_num_tool">
+                            <view class="goods_num">X{{item.num}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+<!-- 底部工具栏 -->
+<view class="footer_tool">
+    <!-- 总价格 -->
+    <view class="total_price_wrap">
+        <view class="total_price">合计:￥{{totalPrice}}</view>
+        <view class="free">含运费</view>
+    </view>
+    <!-- 支付 -->
+    <view class="pay_for_wrap" bindtap="handleOrderPay">支付({{totalNum}})</view>
+</view>

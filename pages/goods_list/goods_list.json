@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "search": "../../compenents/search/search",
+    "tabs": "../../compenents/tabs/tabs"
+  },
+  "navigationBarTitleText": "商品列表",
+  "onReachBottomDistance":50,
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

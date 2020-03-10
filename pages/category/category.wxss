@@ -1,0 +1,65 @@
+Pages {
+  height: 100%;
+}
+
+.cates {
+  height: 100%;
+}
+
+/* less使用中calc时~'表达式'就会原样输出 */
+
+.cates_container {
+  height: calc(100vh - 90rpx); /* 算数符号两边需要空格才生效 */
+  display: flex;
+}
+
+.cates_container .left_menu {
+  flex: 2;
+}
+
+.left_menu .menu_item {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+
+.cates_container .right_content {
+  flex: 5;
+}
+.right_content .goods_group{
+  padding: 20rpx 0;
+}
+.right_content .goods_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.goods_title .delimiter{
+  color: #ccc;
+  padding: 0 10rpx;
+}
+.right_content .goods_list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20rpx 0;
+}
+
+.right_content .goods_list navigator {
+  width: 33.33%;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.goods_list navigator image {
+  width: 50%;
+}

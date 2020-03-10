@@ -1,0 +1,29 @@
+<tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <!-- 导航菜单 -->
+    <view class="collect_main">
+        <view class="collect_title">
+            <text class="collect_tips active">全部</text>
+            <text class="collect_tips">正在热卖</text>
+            <text class="collect_tips">即将上线</text>
+        </view>
+        <view class="collect-content"></view>
+    </view>
+    <!-- 收藏内容 -->
+    <view class="collect_content">
+        <block wx:if="{{collect.length!=0}}">
+            <view class="collect_item" wx:for="{{collect}}" wx:key="goods_id">
+                <!-- 传递参数要 参数名=参数 -->
+                <navigator url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+                    <image mode="widthFix" src="{{item.goods_small_logo}}" />
+                    <view class="goods_info">
+                        <view class="goods_name">{{item.goods_name}}</view>
+                        <text>￥{{item.goods_price}}</text>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="noGoods">您还没有收藏品哦</view>
+        </block>
+    </view>
+</tabs>

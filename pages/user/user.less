@@ -1,0 +1,134 @@
+page{
+    background-color: #ccc;
+    color: #555;
+}
+// 登录按钮
+.user_btn{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    font-size: 38rpx;
+    transform: translateX(-50%);
+    color: greenyellow;
+    border-radius: 10rpx;
+    border: 1px solid currentColor;
+    padding: 30rpx;
+}
+// 头像信息
+.user_info_wrap{
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    background-color: var(--themeColor);
+    .user_img_wrap{
+        .user_bg{
+            height: 50vh;
+            width: 100%;
+            filter: blur(10rpx)
+        }
+        .user_info{
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20%;
+            position: absolute;
+            .user_icon{
+                width: 150rpx;
+                height: 150rpx;
+                border-radius: 50%;
+            }
+            .user_name{
+                margin-top: 50rpx;
+                color: #fff;
+                font-size: 40rpx;
+            }
+        }
+}
+
+    }
+// 订单 app相关
+.user_content{
+    position: relative;
+    .user_main{
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top:-20rpx;
+        transform: translateX(-50%);
+        padding-bottom: 100rpx;
+        .history_wrap{
+            width: 100%;
+            display: flex;
+            background-color: #fff;
+            padding:15rpx 0;
+            navigator{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 30rpx;
+                .his_num{
+                    color: var(--themeColor);
+                }
+                .his_name{
+
+                }
+            }
+        }
+        .order_wrap{
+            background-color: #fff;
+            width: 100%;
+            margin-top: 20rpx;
+            .order_title_wrap{
+                width: 100%;
+                padding:15rpx;
+                font-size: 32rpx;
+                border-bottom: 1rpx solid #ccc;
+            }
+            .order_item_wrap{
+                display: flex;
+                navigator{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15rpx;
+                    justify-content: center;
+                    align-items: center;
+                    .order_icon{
+                        font-size: 40rpx;
+                        color: var(--themeColor);
+                    }
+                    .order_name{
+                        font-size: 28rpx;
+                    }
+                }
+            }
+        }
+        .address{
+            padding: 15rpx;
+            background-color: #fff;
+            margin-top: 20rpx;
+            font-size: 32rpx;
+        }
+        .app_info_wrap{
+            margin-top: 20rpx;
+            font-size: 32rpx;
+            .app_info_item{
+                padding: 15rpx;
+                background-color: #fff;
+                border-bottom: 1rpx solid #ccc;
+            }
+            .app_info_contact{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .share{
+            padding: 15rpx;
+            font-size: 30rpx;
+            background-color: #fff;
+            margin-top: 20rpx;
+        }
+    }
+
+}

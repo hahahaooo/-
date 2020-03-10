@@ -1,0 +1,2 @@
+<!-- button getUserInfo 接口 回调函数bindgetuserinfo 绑定事件名-->
+<button type="primary" plain="{{true}}" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取权限</button>

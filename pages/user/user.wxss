@@ -1,0 +1,124 @@
+page {
+  background-color: #ccc;
+  color: #555;
+}
+.user_btn {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  font-size: 38rpx;
+  transform: translateX(-50%);
+  color: greenyellow;
+  border-radius: 10rpx;
+  border: 1px solid currentColor;
+  padding: 30rpx;
+}
+.user_info_wrap {
+  position: relative;
+  height: 45vh;
+  width: 100%;
+  background-color: var(--themeColor);
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 50vh;
+  width: 100%;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .user_info {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  position: absolute;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  margin-top: 50rpx;
+  color: #fff;
+  font-size: 40rpx;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: -20rpx;
+  transform: translateX(-50%);
+  padding-bottom: 100rpx;
+}
+.user_content .user_main .history_wrap {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 15rpx 0;
+}
+.user_content .user_main .history_wrap navigator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.user_content .user_main .history_wrap navigator .his_num {
+  color: var(--themeColor);
+}
+.user_content .user_main .order_wrap {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.user_content .user_main .order_wrap .order_title_wrap {
+  width: 100%;
+  padding: 15rpx;
+  font-size: 32rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .order_wrap .order_item_wrap {
+  display: flex;
+}
+.user_content .user_main .order_wrap .order_item_wrap navigator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15rpx;
+  justify-content: center;
+  align-items: center;
+}
+.user_content .user_main .order_wrap .order_item_wrap navigator .order_icon {
+  font-size: 40rpx;
+  color: var(--themeColor);
+}
+.user_content .user_main .order_wrap .order_item_wrap navigator .order_name {
+  font-size: 28rpx;
+}
+.user_content .user_main .address {
+  padding: 15rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.user_content .user_main .app_info_wrap {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+.user_content .user_main .app_info_wrap .app_info_item {
+  padding: 15rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #ccc;
+}
+.user_content .user_main .app_info_wrap .app_info_contact {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .share {
+  padding: 15rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}

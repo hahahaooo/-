@@ -1,0 +1,3 @@
+<view class='search'>
+    <navigator open-type='navigate' class='searchlab' url='/pages/search/search' >搜索</navigator>
+  </view>
